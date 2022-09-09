@@ -18,7 +18,7 @@ if ($PSScriptRoot -ne "C:\Projekt")
         #[System.Windows.Forms.MessageBox]::Show($MyInvocation.MyCommand.Name)
         
         Set-Location -Path "C:\Projekt"
-        [System.Windows.Forms.MessageBox]::Show("führen Sie die Datei C:\Projekt\"+$MyInvocation.MyCommand.Name+ " aus")
+        [System.Windows.Forms.MessageBox]::Show("fuehren Sie die Datei C:\Projekt\"+$MyInvocation.MyCommand.Name+ " aus")
         exit
     }
     else
@@ -39,7 +39,7 @@ if ($PSScriptRoot -ne "C:\Projekt")
         Copy-Item $PSCommandPath -Destination "C:\Projekt"
         [System.Windows.Forms.MessageBox]::Show($PSCommandPath +" Datei kopiert nach C:\Projekt")
         Set-Location -Path "C:\Projekt"
-        [System.Windows.Forms.MessageBox]::Show("führen Sie die Datei C:\Projekt\"+$MyInvocation.MyCommand.Name+ " aus ")
+        [System.Windows.Forms.MessageBox]::Show("fuehren Sie die Datei C:\Projekt\"+$MyInvocation.MyCommand.Name+ " aus ")
         exit
     }    
     
